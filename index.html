@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Guitar Page</title>
+  </head>
+  <body>
+    <header id="navbar">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Browse</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="title">
+        <h1>The new series is here!</h1>
+      </div>
+      <div class="main-image">
+        <img src="./images/main-image.png" alt="" />
+        <div class="note">
+          <p>
+            These images and model names are not mine. They belong to Paul Reed
+            Smith. I just used them for practice.
+          </p>
+        </div>
+      </div>
+    </main>
+    <div class="second">
+      <div class="guitars">
+        <div class="guitar">
+          <img src="./images/burled-vertical.png" alt="" />
+          <h4>Custom 24 Burled Ash</h4>
+        </div>
+        <div class="guitar">
+          <img src="./images/tremonti-vertical.png" alt="" />
+          <h4>Mark Tremonti Holocomb</h4>
+        </div>
+        <div class="guitar">
+          <img src="./images/poplar-vertical.png" alt="" />
+          <h4>Custom 25 Poplar Blur</h4>
+        </div>
+        <div class="guitar">
+          <img src="./images/hollowbody-vertical.png" alt="" />
+          <h4>SE Hollowbody Staight</h4>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <div class="container">
+        <h2>Custom 24 Burled Ash</h2>
+        <img src="./images/burled-horizontal.png" alt="" />
+      </div>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        faucibus nisl nec dui scelerisque finibus. Morbi tristique lacus eget
+        erat rutrum, vitae viverra mi suscipit. Maecenas elementum elementum
+        nisl, eu auctor nisl faucibus ac. Fusce rhoncus purus eros, in posuere
+        turpis pretium eu. Praesent convallis porta pharetra. Curabitur nunc
+        metus, eleifend ac ex nec, maximus tincidunt dolor. Sed sagittis, turpis
+        vitae volutpat ultricies, tortor erat malesuada quam, a varius diam
+        velit vel augue. Ut fermentum lacus in orci lobortis blandit. Donec quis
+        iaculis dolor.
+      </p>
+    </div>
+    <div class="page">
+      <div class="container">
+        <h2>Mark Tremonti Holocomb</h2>
+        <img src="./images/tremonti-horizontal.png" alt="" />
+      </div>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        faucibus nisl nec dui scelerisque finibus. Morbi tristique lacus eget
+        erat rutrum, vitae viverra mi suscipit. Maecenas elementum elementum
+        nisl, eu auctor nisl faucibus ac. Fusce rhoncus purus eros, in posuere
+        turpis pretium eu. Praesent convallis porta pharetra. Curabitur nunc
+        metus, eleifend ac ex nec, maximus tincidunt dolor. Sed sagittis, turpis
+        vitae volutpat ultricies, tortor erat malesuada quam, a varius diam
+        velit vel augue. Ut fermentum lacus in orci lobortis blandit. Donec quis
+        iaculis dolor.
+      </p>
+    </div>
+    <div class="page">
+      <div class="container">
+        <h2>Custom 25 Poplar Blue</h2>
+        <img src="./images/poplar-horizontal.png" alt="" />
+      </div>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        faucibus nisl nec dui scelerisque finibus. Morbi tristique lacus eget
+        erat rutrum, vitae viverra mi suscipit. Maecenas elementum elementum
+        nisl, eu auctor nisl faucibus ac. Fusce rhoncus purus eros, in posuere
+        turpis pretium eu. Praesent convallis porta pharetra. Curabitur nunc
+        metus, eleifend ac ex nec, maximus tincidunt dolor. Sed sagittis, turpis
+        vitae volutpat ultricies, tortor erat malesuada quam, a varius diam
+        velit vel augue. Ut fermentum lacus in orci lobortis blandit. Donec quis
+        iaculis dolor.
+      </p>
+    </div>
+    <div class="page">
+      <div class="container">
+        <h2>SE Hollowbody Straight</h2>
+        <img src="./images/hollowbody-horizontal.png" alt="" />
+      </div>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        faucibus nisl nec dui scelerisque finibus. Morbi tristique lacus eget
+        erat rutrum, vitae viverra mi suscipit. Maecenas elementum elementum
+        nisl, eu auctor nisl faucibus ac. Fusce rhoncus purus eros, in posuere
+        turpis pretium eu. Praesent convallis porta pharetra. Curabitur nunc
+        metus, eleifend ac ex nec, maximus tincidunt dolor. Sed sagittis, turpis
+        vitae volutpat ultricies, tortor erat malesuada quam, a varius diam
+        velit vel augue. Ut fermentum lacus in orci lobortis blandit. Donec quis
+        iaculis dolor.
+      </p>
+    </div>
+
+    <script type="text/javascript">
+      var lastScrollTop = 0;
+      var navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", function () {
+        var scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          navbar.style.top = "-10vh";
+        } else {
+          navbar.style.top = 0;
+        }
+        lastScrollTop = scrollTop;
+      });
+    </script>
+  </body>
+</html>

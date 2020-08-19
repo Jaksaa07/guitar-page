@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+header {
+  height: 7vh;
+  width: 100%;
+  z-index: 5;
+  position: fixed;
+  background-color: black;
+
+  nav {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 0;
+
+    ul {
+      display: flex;
+      height: 100%;
+      list-style: none;
+      align-items: center;
+
+      li {
+        padding: 0 3em;
+
+        a {
+          text-decoration: none;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+main {
+  background: radial-gradient(
+    38.06% 31.05% at 50% 50%,
+    #c4c4c4 0%,
+    #000000 100%
+  );
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-rows: 20% 1fr;
+
+  .title {
+    grid-column: 2/3;
+    align-self: flex-end;
+    justify-self: center;
+    padding-bottom: 2rem;
+
+    h1 {
+      font-size: 64px;
+      font-weight: bold;
+      color: #dddddd;
+    }
+  }
+
+  .main-image {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    justify-self: center;
+    padding-top: 5rem;
+    position: relative;
+
+    .note {
+      position: absolute;
+      bottom: 150px;
+      left: 100px;
+      color: #c4c4c4;
+    }
+  }
+}
+
+.second {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .guitars {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+
+    .guitar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h4 {
+        display: block;
+        width: 90%;
+        text-align: center;
+        color: #c5c5c5;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.page {
+  align-self: center;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  .container {
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+      color: #c5c5c5;
+      font-weight: bold;
+    }
+  }
+
+  .description {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+}
